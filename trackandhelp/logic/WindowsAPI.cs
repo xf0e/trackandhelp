@@ -26,7 +26,7 @@ namespace trackandhelp.logic
 
             if (GetWindowText(handle, Buff, nChars) > 0)
             {
-                Debug.WriteLine(Buff);
+                //Debug.WriteLine(Buff);
                 return Option<ActiveWindowModel>.Some(ActiveWindowModel.Create(handle, Buff.ToString()));
             }
 
